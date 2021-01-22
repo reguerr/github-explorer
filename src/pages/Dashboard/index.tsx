@@ -1,4 +1,59 @@
 import React from 'react';
+import { FiChevronRight } from 'react-icons/fi';
 
-const Dashboard: React.FC = () => <h1>Dashboard</h1>;
+import logoImg from '../../assets/logo.svg';
+import { Title, Form, Repositories } from './styles';
+
+const Dashboard: React.FC = () => {
+  return (
+    <>
+      <img src={logoImg} alt="Github Explorer" />
+      <Title>Explore repositórios no Github</Title>
+
+      <Form>
+        <input placeholder="Digite o nome do repositório" />
+        <button type="submit">Pesquisar</button>
+      </Form>
+
+      <Repositories>
+        <a href="teste">
+          <img
+            src="https://avatars.githubusercontent.com/u/30126229?s=460&u=93ab4ea5fe6f2a59cc6fd14f0ce0839b1f67daa5&v=4"
+            alt=""
+          />
+          <div>
+            <strong>Renatinha Guerrinha</strong>
+            <p>Easy peasy highly scalable ReactJS & React Native forms!</p>
+          </div>
+
+          <FiChevronRight size={20} />
+        </a>
+        <a href="teste">
+          <img
+            src="https://avatars.githubusercontent.com/u/30126229?s=460&u=93ab4ea5fe6f2a59cc6fd14f0ce0839b1f67daa5&v=4"
+            alt=""
+          />
+          <div>
+            <strong>Renatinha Guerrinha</strong>
+            <p>Easy peasy highly scalable ReactJS & React Native forms!</p>
+          </div>
+
+          <FiChevronRight size={20} />
+        </a>
+        <a href="teste">
+          <img
+            src="https://avatars.githubusercontent.com/u/30126229?s=460&u=93ab4ea5fe6f2a59cc6fd14f0ce0839b1f67daa5&v=4"
+            alt=""
+          />
+          <div>
+            <strong>Renatinha Guerrinha</strong>
+            <p>Easy peasy highly scalable ReactJS & React Native forms!</p>
+          </div>
+
+          <FiChevronRight size={20} />
+        </a>
+      </Repositories>
+    </>
+  );
+};
 export default Dashboard;
